@@ -1,0 +1,699 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Friendly_Regular, Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar
+
+{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb
+
+{
+    background: #414141;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: #f1f1f1;
+}
+
+body
+
+{
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Friendly_Semibold;
+    src: url(../fonts/Friends-SemiBold.otf);
+}
+
+@font-face {
+    font-family: Friendly_Ultrabold;
+    src: url(../fonts/Friends-UltraBold.otf);
+}
+
+@font-face {
+    font-family: Friendly_Regular;
+    src: url(../fonts/Friends-Regular.otf);
+}
+
+
+
+/* Menu fixo */
+
+
+
+header
+
+{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo
+
+{
+    position: absolute;
+    left: 15%;
+}
+
+.responsive
+
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo_responsive
+
+{
+    display: none;
+    font-family: Friendly_Semibold, Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_responsive svg
+
+{
+    width: 10vw;
+    max-width: 25px;
+}
+
+.logo_responsive p
+
+{
+    font-size: clamp(7px, calc(1vh + 1vw), 24px);
+    margin: 0 7px;
+}
+
+.menu
+
+{
+    width: 30%;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.menu ul
+
+{
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.menu ul li
+
+{
+    font-size: clamp(7px, calc(1.2vh + 1.2vw), 20px);
+    font-family: Friendly_Semibold, Arial, Helvetica, sans-serif;
+    transition: all .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a
+
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.menu ul:hover > li:not(:hover)
+
+{
+    opacity: 0.4;
+}
+
+/* --------------------\\\FIM///-------------------- */
+
+
+
+
+
+
+/* Elemento para preencher o vazio criado pelo 'position: fixed' do Menu */
+
+
+.full
+
+{
+    width: 100vw;
+    height: 20vh;
+}
+
+
+
+/* --------------------\\\FIM///-------------------- */
+
+
+
+
+
+
+/* Texto "Precisa impulsionar seu negócio?" */
+
+
+.text_impulse
+
+{
+    font-family: Friendly_Semibold, Arial, Helvetica, sans-serif;
+    font-size: clamp(17px, calc(2vh + 2vw), 45px);
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+
+
+/* --------------------\\\FIM///-------------------- */
+
+
+
+
+/* Sobre */
+
+
+.about
+
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+
+.fx-direc-col
+
+{
+    flex-direction: column;
+}
+
+
+.men_thinking
+
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.men_thinking::after
+
+{
+    content: '';
+    position: absolute;
+    width: 170%;
+    height: 55%;
+    background: #000;
+    bottom: -10%;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+
+.container_about
+
+{
+    width: 97vw;
+    top: 100%;
+    border-radius: 20px;
+}
+
+.about_title, .servicos_title, .contact_title
+
+{
+    font-family: Friendly_Ultrabold, Arial, Helvetica, sans-serif;
+    font-size: clamp(17px, calc(1.3vh + 1.3vw), 35px);
+}
+
+.about_text, .servicos_text, .old_computer_text
+
+{
+    font-size: clamp(10px, calc(1vh + 1vw), 15px);
+    font-family: Friendly_Regular, Arial, Helvetica, sans-serif;
+}
+
+
+/* --------------------\\\FIM///-------------------- */
+
+
+/* Serviços */
+
+.servicos
+
+{
+    width: 100vw;
+}
+
+
+.balons
+
+{
+    width: 100vw;
+    margin: 5vw 0;
+}
+
+.first_balon, .second_balon
+
+{
+    background: #ededed;
+    box-shadow: -15px 15px 35.1px -4px rgba(0, 0, 0, 0.25);
+    font-size: clamp(15px, calc(1.5vh + 1.5vw), 24px);
+    font-family: Friendly_Regular, Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.first_balon
+
+{
+    border-radius: 0px 30px 30px 30px;
+}
+
+.second_balon
+
+{
+    border-radius: 30px 0px 30px 30px;
+}
+
+.blue-stick-first_balon
+
+{
+    position: absolute;
+    top: 75%;
+    left: 95%;
+}
+
+.blue-stick-second_balon
+
+{
+    position: absolute;
+    top: 75%;
+    left: 3%;
+}
+
+
+/* --------------------\\\FIM///-------------------- */
+
+
+/* Contato */
+
+
+.inputGroup, .textareaGroup
+
+{
+    position: relative;
+}
+
+.inputGroup label
+
+{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.textareaGroup label
+
+{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.textareaGroup :is(textarea:focus, textarea:valid) ~ label
+
+{
+    top: -2%;
+    transform: translateY(-50%) scale(1.1);
+}
+.inputGroup :is(input:focus, input:valid) ~ label
+
+{
+    top: -2%;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.form_contact input, .form_contact textarea
+
+{
+    width: 100%;
+    background: #fff;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: -15px 15px 35.1px -4px rgba(0, 0, 0, 0.25);
+    font-size: clamp(12px, calc(1vh + 1vw), 17px);
+}
+
+.form_contact textarea
+
+{
+    resize: none;
+}
+
+textarea::-webkit-scrollbar
+
+{
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb
+
+{
+    background: #414141;
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-track
+
+{
+    background: #ededed;
+    border-radius: 10px;
+}
+
+.form_contact .button
+
+{
+    background: #ededed;
+    padding: 15px 20px;
+    font-size: clamp(10px, calc(1vh + 1vw), 15px);
+    font-family: Friendly_Semibold, Arial, Helvetica, sans-serif;
+    border: none;
+    border-bottom: 4px solid #b2b2b2;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form_contact .button span
+
+{
+    transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.form_contact .button:hover span:nth-child(1)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 0);
+}
+.form_contact .button:hover span:nth-child(2)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 1);
+}
+.form_contact .button:hover span:nth-child(3)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 2);
+}
+
+.form_contact .button:hover span:nth-child(4)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 3);
+}
+
+.form_contact .button:hover span:nth-child(5)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 4);
+}
+
+
+.form_contact .button:hover span:nth-child(7)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 5);
+}
+
+.form_contact .button:hover span:nth-child(8)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 6);
+}
+
+.form_contact .button:hover span:nth-child(9)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 7);
+}
+
+.form_contact .button:hover span:nth-child(10)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 8);
+}
+
+.form_contact .button:hover span:nth-child(11)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 9);
+}
+
+.form_contact .button:hover span:nth-child(12)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 10);
+}
+
+.form_contact .button:hover span:nth-child(13)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 11);
+}
+
+.form_contact .button:hover span:nth-child(14)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 12);
+}
+
+.form_contact .button:hover span:nth-child(15)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 13);
+}
+
+.form_contact .button:hover span:nth-child(16)
+
+{
+    animation: lettersWave .3s linear;
+    animation-delay: calc(.01s * 14);
+}
+
+@keyframes lettersWave {
+    0%
+    {
+        margin-top: 0;
+    }
+
+    25%
+
+    {
+        margin-top: -9px;
+        scale: 1.1;
+    }
+
+    50%
+
+    {
+        margin-top: -9px;
+        scale: 1.1;
+    }
+
+    100%
+
+    {
+        margin-top: 0;
+    }
+}
+
+
+/* --------------------\\\FIM///-------------------- */
+
+
+/* Rodapé */
+
+
+footer
+
+{
+    width: 100vw;
+    padding: 40px;
+    background: #000;
+    color: #fff;
+}
+
+
+footer section div
+
+{
+    display: flex;
+}
+
+footer section div img
+
+{
+    width: 25px;
+    height: 25px;
+}
+
+.logo_name
+{
+    font-size: clamp(18px, calc(1vh + 1vw), 24px);
+}
+
+.titulo_rodape
+
+{
+    font-size: clamp(15px, calc(1vh + 1vw), 20px);
+}
+
+footer a:hover
+
+{
+    border-bottom: 1px solid white;
+}
+
+
+footer ul
+
+{
+    list-style: none;
+}
+
+/* --------------------\\\FIM///-------------------- */
+
+
+@media (max-width: 576px)
+
+{
+    .blue-stick-first_balon
+
+    {
+        top: 70%;
+        left: 90%;
+    }
+
+    .blue-stick-second_balon
+
+    {
+        top: 70%;
+        left: 5%;
+    }
+
+    .old-computer
+
+    {
+        flex-direction: column-reverse;
+    }
+
+    .modern-computer
+
+    {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 800px)
+
+{
+    .logo
+    
+    {
+        display: none;
+    }
+
+    .logo_responsive
+
+    {
+        display: flex;
+    }
+}
+
+@media (max-width:768px) 
+
+{
+    footer
+
+    {
+        flex-direction: column;
+    }
+}
+
+@media (min-width:768px)
+
+{
+    hr
+
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 450px)
+
+{
+    .menu
+
+    {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 450px)
+
+{
+    .menu
+
+    {
+        min-width: 432px;
+    }
+}
+

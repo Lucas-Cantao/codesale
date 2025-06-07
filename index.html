@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -199,20 +200,20 @@
                     Entrar em contato
                 </p>
 
-                <form action="" class="form_contact d-flex fx-direc-col gap-5">
+                <form action="https://formspree.io/f/xpzvkrel" method="POST" class="form_contact d-flex fx-direc-col gap-5" id="contactForm">
                     <div class="inputGroup">
-                        <input type="text" autocomplete="off" required>
+                        <input type="text" name="name" autocomplete="off" required>
                         <label for="name">Nome Completo</label>
                     </div>
                     <div class="inputGroup">
-                        <input type="email" autocomplete="off" required>
+                        <input type="email" name="email" autocomplete="off" required>
                         <label for="email">E-mail</label>
                     </div>
                     <div class="textareaGroup">
-                        <textarea name="" id="" cols="30" rows="5" autocomplete="off" required></textarea>
+                        <textarea name="message" cols="30" rows="5" autocomplete="off" required></textarea>
                         <label for="proposta">Envie aqui sua proposta de melhoria...</label>
                     </div>
-                    <button class="button col-8 col-sm-5">
+                    <button type="submit" class="button col-8 col-sm-6">
                         <span>V</span>
                         <span>a</span>
                         <span>m</span>
@@ -243,8 +244,8 @@
 
     <!-- Rodapé -->
 
-    <footer class="container-fluid d-flex justify-content-around">
-        <section class="col-3">
+    <footer class="footer d-flex justify-content-evenly">
+        <section>
             <div>
                 <img src="images/logo.png" alt="logo">
                 <p class="my-auto logo_name">
@@ -259,8 +260,8 @@
                 2024 - CodeSale
             </p>
         </section>
-
-        <section class="col-2 d-flex fx-direc-col">
+        <hr>
+        <section>
             <p class="titulo_rodape">
                 Contato
             </p>
@@ -271,8 +272,8 @@
             </p>
 
         </section>
-        
-        <section class="col-2">
+        <hr>
+        <section>
             <p class="titulo_rodape">
                 Representantes em:
             </p>
@@ -285,8 +286,8 @@
                 Itapecerica da Serra - SP
             </p>
         </section>
-
-        <section class="col-2">
+        <hr>
+        <section>
             <p class="titulo_rodape">
                 Navegação
             </p>
@@ -302,6 +303,6 @@
 
     <!-- -----------------------\\\FIM///----------------------- -->
 
-
+<script src="scripts/script.js"></script>
 </body>
 </html>
