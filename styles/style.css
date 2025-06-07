@@ -697,3 +697,28 @@ footer ul
     }
 }
 
+
+/* --- Estilos para Animação de Surgimento --- */
+
+/*
+  A classe 'hidden-component' será usada para esconder os elementos antes de aparecerem.
+  - opacity: 0; torna o elemento totalmente transparente.
+  - transform: translateY(20px); move o elemento um pouco para baixo.
+  - transition: all 0.7s ease-out; define a animação de transição para todas as propriedades,
+    com duração de 0.7 segundos e um efeito de desaceleração suave.
+*/
+.hidden-component {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.7s ease-out;
+}
+
+/*
+  A classe 'visible' será adicionada via JavaScript quando o elemento estiver visível na tela.
+  - opacity: 1; torna o elemento totalmente visível.
+  - transform: translateY(0); move o elemento de volta à sua posição original.
+*/
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
