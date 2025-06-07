@@ -714,6 +714,58 @@ footer ul
 }
 
 /*
+
+/* --- Estilos para os Cards de Informação --- */
+
+/*
+  O .cards-container organiza os cards.
+  - display: flex; ativa o layout flexível.
+  - justify-content: center; centraliza os cards no contêiner.
+  - gap: 2rem; cria um espaço de aproximadamente 32px entre os cards.
+  - flex-wrap: wrap; permite que os cards quebrem para a linha de baixo em telas menores.
+  - margin-top: 2rem; adiciona um espaço acima do conjunto de cards.
+*/
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+/*
+  O .info-card é o estilo de cada card individual.
+  - background: #1c1c1c; cor de fundo escura, mas sutilmente diferente do preto.
+  - padding: 2rem; espaço interno para o conteúdo não ficar colado nas bordas.
+  - border-radius: 15px; deixa as bordas arredondadas.
+  - border: 1px solid #414141; cria uma borda sutil.
+  - flex-basis: 300px; define uma largura inicial para cada card.
+  - flex-grow: 1; permite que o card estique para ocupar o espaço disponível.
+  - text-align: left; alinha o texto à esquerda dentro do card.
+*/
+.info-card {
+    background: #1c1c1c;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid #414141;
+    flex-basis: 300px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+/*
+  Estilo para um possível título dentro do card, usando a fonte e a cor que já temos no projeto.
+*/
+.info-card h4 {
+    font-family: 'Friendly_Semibold', Arial, Helvetica, sans-serif;
+    color: #0EB2E8; /* Usando o azul dos detalhes do site */
+    margin-bottom: 1rem;
+}
+
+/* Adicionando centralização de texto para os títulos principais das seções */
+.about_title, .servicos_title {
+    text-align: center;
+}
   A classe 'visible' será adicionada via JavaScript quando o elemento estiver visível na tela.
   - opacity: 1; torna o elemento totalmente visível.
   - transform: translateY(0); move o elemento de volta à sua posição original.
